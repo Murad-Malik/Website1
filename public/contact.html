@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content=""width=device-width, intiial-scale="1.0"> 
+  <title>W.A.K Accounting</title>
+  <!-- icon for the tab -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="website-logo-WAK.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    
+  <section>
+    <nav>
+      <header></header>
+      <script>
+        // Use JavaScript to include the header
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.querySelector('header').innerHTML = data;
+          });
+      </script>
+   
+   <!-- footer -->
+    <footer>
+      <div class="footer_main">
+        <div class="tag">
+          <h1> Contact</h1>
+          <a href="#"><i class ="fa-solid fa-house"></i>address</a>
+          <a href="#"><i class ="fa-solid fa-phone"></i>9057169790</a>
+          <a href="#"><i class ="fa-solid fa-envelope"></i>email address</a>
+        </div>
+
+
+        <div class="tag">
+          <h1> Follow us</h1>
+          <div class="social_link"> 
+            <a href="#"><i class ="fa-brands fa-square-facebook fa-lg"></i></a>
+            <a href="#"><i class ="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></i></a>
+          </div>
+        </div>    
+      </div>
+    </footer>
+
+
+    <form action="process_form.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <input type="submit" value="Submit">
+  </form>
+
+
+  <div class="contact-form">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,43 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>W.A.K Accounting</title>
+  <!-- icon for the tab -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="website-logo-WAK.png">
+  <link rel="stylesheet" type="text/css" href="styles.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="script.js" defer></script>
+  
+</head>
+<body>
+  <header></header>
+  <script>
+    // Use JavaScript to include the header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.querySelector('header').innerHTML = data;
+      });
+  </script>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
+  <div class="background-container">
+    <h2>Welcome to Our Website</h2>
+    <p>We offer professional accounting services to help your business thrive.</p>
+    <a href="about.html">Learn More</a>
+  </div>
+        
+<!-- icons in the header section -->
+        <div class="icons">
+        </div>
+      <!-- </nav> -->
+
+      <div class="main" id="Home">
+        <div class="main_content">
+          <div class = "main_text">
+            <h1>Text<br><span> Sample</span></h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 
+              1500s, when an unknown printer took a galley of type and scrambled 
+              it to make a type specimen book. It has survived not only five centuries,
+              but also the leap into electronic typesetting, remaining essentially unchanged. 
+              It was popularised in the 1960s with the release of Letraset sheets containing 
+              Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+              PageMaker including versions of Lorem Ipsum.
+            </p>
+
+          </div>
+          <div class="main_image">
+            <img src="website-logo-WAK.png" alt="logo">
+          </div>
+        </div>
+        <!-- <div class="social_icon">
+          <i class="fa-brands fa-square-facebook fa-lg"></i>
+          <i class="fa-brands fa-linkedin fa-lg"></i>
+        </div> -->
+
+        <!-- this text takes you to the top of the page atm -->
+        <div class="button">
+          <a href="#">Still figuring out what to do with this button </a>
+        </div>
+      </div>
+
+    </section>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+          <div class ="products_text"></div>
+            <h2> world’s leading CPA Professional Corporation</h2>
+            <p>
+              this section will be writing about the company 
+            </p>
+          </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    </div>
+    
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- footer -->
+    <footer>
+      <div class="footer_main">
+        <div class="tag">
+          <h1> Contact</h1>
+          <a href="#"><i class ="fa-solid fa-house"></i>address</a>
+          <a href="#"><i class ="fa-solid fa-phone"></i>9057169790</a>
+          <a href="#"><i class ="fa-solid fa-envelope"></i>email address</a>
+        </div>
+
+
+        <div class="tag">
+          <h1> Follow us</h1>
+          <div class="social_link"> 
+            <a href="#"><i class ="fa-brands fa-square-facebook fa-lg"></i></a>
+            <a href="#"><i class ="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></i></a>
+          </div>
+        </div>    
+      </div>
+    </footer>
+  
+</body>
 </html>
