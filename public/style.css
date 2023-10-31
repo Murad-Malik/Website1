@@ -81,6 +81,11 @@ section .main .main_content{
   display:flex;
   align-items:center;
   justify-content: space-around;
+  height: 1200px;
+}
+
+.middle_section{
+  height: 600px;
 }
 
 
@@ -165,15 +170,13 @@ transform: translateX(6px);
 footer{
   width: 100%;
   border: 2px solid #040000;
-  padding: 10px;
-  background-color: white; /* Add background color if desired */
-  /* text-align: center; Center text within the footer */
+  background-color: white; 
 }
 
 footer .footer_main{
   
   width: 100%;
-  background: white;
+  background: #282A37;
   display: flex; 
   justify-content: space-around;
 }
@@ -189,13 +192,13 @@ footer .footer_main .tag .center{
 footer .footer_main .tag h1{
   font-size: 25px;
   margin: 25px 0;
-  color: #080808;
+  color: #ffffff;
 }
 
 
 footer .footer_main .tag a{
   display: block;
-  color: black;
+  color: white;
   text-decoration: none;
   margin: 9px 0;
 }
