@@ -34,10 +34,10 @@ section nav {
 section nav .logo {
   font-size: 12px; /* Adjust the font size as needed */
   color: #ffffff; /* White color */
-  margin: 5px 0;
+  margin: 5px ;
   cursor: pointer;
   position: relative;
-  right: 17.5%; /* Adjust the right position as needed */
+  right: 15%; /* Adjust the right position as needed */
   text-align: center; /* Center the text */
 }
 /* adjusts the text when reducing browser size */
