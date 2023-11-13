@@ -245,6 +245,24 @@ body {
   color: rgb(255, 255, 255)
 }
 
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.service-text {
+  width: 45%;
+}
+
+.service-image {
+  width: 45%;
+  max-height: 200px; /* Adjust as needed */
+}
+
+
 /* Style the "About" links */
 .about-link {
   color: rgb(255, 255, 255)
@@ -373,3 +391,129 @@ ul {
 li {
   margin-bottom: 5px; /* Adjust margin as needed */
 }
+
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the containers horizontally */
+  align-items: center; /* Center the containers vertically */
+  /* You can add additional styling here based on your design requirements */
+  margin-top: 20px; /* Add margin at the top if needed */
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.accounting-container {
+  display: flex;
+  margin-top: 5%;
+  /* You can add additional styling here based on your design requirements */
+}
+
+.accounting-text {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10%;
+}
+
+#accounting-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 30%; /* Set a fixed width for the image container */
+  height: auto;
+  border: 1px solid #ddd;
+  margin-left: 40%; /* Adjust this margin as needed for spacing */
+}
+
+.taxation-container {
+  display: flex;
+  /* You can add additional styling here based on your design requirements */
+}
+
+.taxation-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 30%; /* Set a fixed width for the image container */
+  height: auto;
+  border: 1px solid #ddd;
+  margin-right: 20%; /* Adjust this margin as needed for spacing */
+}
+
+#taxation-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.taxation-text {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 28px;
+  text-align: left;
+}
+
+.assurance-container {
+  display: flex;
+  /* You can add additional styling here based on your design requirements */
+}
+
+.assurance-text {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 28px;
+  text-align: left;
+}
+
+.assurance-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 30%; /* Set a fixed width for the image container */
+  height: auto;
+  border: 1px solid #ddd;
+  margin-left: 40%; /* Adjust this margin as needed for spacing */
+}
+
+#assurance-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.risk-container {
+  display: flex;
+  /* You can add additional styling here based on your design requirements */
+}
+
+.risk-image {
+  flex: 1;
+  text-align: right;
+  margin-right: 20px; /* Adjust this margin as needed for spacing */
+}
+
+#risk-advisory-image {
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  width: 30%; /* Set a fixed width for the image container */
+  height: auto;
+  border: 1px solid #ddd;
+  margin-right: 40%; /* Adjust this margin as needed for spacing */
+}
+
+.risk-text {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 28px;
+  text-align: left;
+}
+
+
+
+/* Add this style to move the image to the right side */
+.service-image {
+  flex: 1;
+  text-align: right; /* Align text to the right */
+}
+
+
