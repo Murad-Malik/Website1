@@ -353,7 +353,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 800px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Vertically align at the top */
@@ -381,6 +381,17 @@ body {
   margin-right: 25%;
 } 
 
+.banner-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Apply styles as needed */
 ul {
   list-style-type: disc; /* You can change to 'circle' or 'square' if desired */
@@ -392,128 +403,114 @@ li {
   margin-bottom: 5px; /* Adjust margin as needed */
 }
 
-
 .services-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center the containers horizontally */
-  align-items: center; /* Center the containers vertically */
-  /* You can add additional styling here based on your design requirements */
-  margin-top: 20px; /* Add margin at the top if needed */
-  margin-right: 20%;
-  margin-left: 20%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.25%;
+  margin-right: 10%; /* Adjusted for better responsiveness */
+  margin-left: 10%; /* Adjusted for better responsiveness */
 }
 
-.accounting-container {
-  display: flex;
-  margin-top: 5%;
-  /* You can add additional styling here based on your design requirements */
-}
-
-.accounting-text {
-  flex: 1;
-  padding: 20px;
-  background-color: #f9f9f9;
-  font-size: 20px;
-  text-align: left;
-  margin-left: 10%;
-}
-
-#accounting-image {
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  width: 30%; /* Set a fixed width for the image container */
-  height: auto;
-  border: 1px solid #ddd;
-  margin-left: 40%; /* Adjust this margin as needed for spacing */
-}
-
-.taxation-container {
-  display: flex;
-  /* You can add additional styling here based on your design requirements */
-}
-
-.taxation-image {
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  width: 30%; /* Set a fixed width for the image container */
-  height: auto;
-  border: 1px solid #ddd;
-  margin-right: 20%; /* Adjust this margin as needed for spacing */
-}
-
-#taxation-image {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-}
-
-.taxation-text {
-  flex: 1;
-  padding: 20px;
-  background-color: #f9f9f9;
-  font-size: 28px;
-  text-align: left;
-}
-
-.assurance-container {
-  display: flex;
-  /* You can add additional styling here based on your design requirements */
-}
-
-.assurance-text {
-  flex: 1;
-  padding: 20px;
-  background-color: #f9f9f9;
-  font-size: 28px;
-  text-align: left;
-}
-
-.assurance-image {
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  width: 30%; /* Set a fixed width for the image container */
-  height: auto;
-  border: 1px solid #ddd;
-  margin-left: 40%; /* Adjust this margin as needed for spacing */
-}
-
-#assurance-image {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-}
-
-.risk-container {
-  display: flex;
-  /* You can add additional styling here based on your design requirements */
-}
-
-.risk-image {
-  flex: 1;
-  text-align: right;
-  margin-right: 20px; /* Adjust this margin as needed for spacing */
-}
-
-#risk-advisory-image {
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  width: 30%; /* Set a fixed width for the image container */
-  height: auto;
-  border: 1px solid #ddd;
-  margin-right: 40%; /* Adjust this margin as needed for spacing */
-}
-
+.accounting-text,
+.taxation-text,
+.assurance-text,
 .risk-text {
   flex: 1;
   padding: 20px;
   background-color: #f9f9f9;
-  font-size: 28px;
   text-align: left;
+  margin: 20px; /* Adjusted for better responsiveness */
 }
 
+.accounting-text h2,
+.taxation-text h2,
+.assurance-text h2,
+.risk-text h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
+.accounting-text p,
+.taxation-text p,
+.assurance-text p,
+.risk-text p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-/* Add this style to move the image to the right side */
+.service-image,
+.accounting-image,
+.taxation-image,
+.assurance-image,
+.risk-advisory-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+#accounting-image {
+  height: 50%;
+  margin-left: 0; /* Adjusted for better responsiveness */
+  margin-top: -15%;
+}
+
+#taxation-image {
+  max-width: 60%;
+}
+
+#assurance-image {
+  height: 50%;
+  margin-left: 0; /* Adjusted for better responsiveness */
+}
+
+#risk-advisory-image {
+  max-width: 100%;
+}
+
 .service-image {
-  flex: 1;
-  text-align: right; /* Align text to the right */
+  text-align: right;
 }
 
+.taxation-text h2,
+.taxation-text p {
+  margin-left: 0;
+  text-align: center;
+}
 
+.taxation-image {
+  margin-right: 10%;
+}
+
+.assurance-image {
+  margin-left: 10%;
+}
+
+.risk-image {
+  margin-right: 10%;
+}
+
+.services-banner-container {
+  background-image: url('serv-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; /* Adjusted for better responsiveness */
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+}
+
+#accounting-image {
+  width: 50%;
+  height: 50%;
+  margin-left: 70%; /* Align to the right */
+  margin-right: 0; /* Reset margin-right */
+  margin-top: -15%;
+}
