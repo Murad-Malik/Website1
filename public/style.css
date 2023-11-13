@@ -363,3 +363,13 @@ body {
   margin-right: 25%;
 } 
 
+/* Apply styles as needed */
+ul {
+  list-style-type: disc; /* You can change to 'circle' or 'square' if desired */
+  margin-top: 10px; /* Adjust margin as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+li {
+  margin-bottom: 5px; /* Adjust margin as needed */
+}
