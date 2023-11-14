@@ -216,6 +216,10 @@ footer .footer_main .tag a i:hover{
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -405,12 +409,8 @@ li {
 
 .services-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4.25%;
-  margin-right: 10%; /* Adjusted for better responsiveness */
-  margin-left: 10%; /* Adjusted for better responsiveness */
+  flex-direction: column;
+  width: 100%;
 }
 
 .accounting-text,
@@ -513,4 +513,33 @@ li {
   margin-left: 70%; /* Align to the right */
   margin-right: 0; /* Reset margin-right */
   margin-top: -15%;
+}
+
+.services-sub-containers {
+  display: flex;
+  width: 100%;
+}
+
+.services-sub-containers div {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.services-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  box-sizing: border-box;
 }
