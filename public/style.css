@@ -1,582 +1,607 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: sans-serif;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-section{
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-/* this makes the top box*/
-section nav {
-  display:flex;
-  align-items: center;
-  justify-content: space-around; 
-  box-shadow: 0 0 8px rgba(0,0,0,0.6);
-  background: #282A37;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  height: 5vh;
-}
-.logo{
-  margin-left: 200%;
-}
-
-section nav .logo {
-  font-size: 12px; /* Adjust the font size as needed */
-  color: #ffffff; /* White color */
-  margin: 5px ;
-  cursor: pointer;
-  position: relative;
-  right: 15%; /* Adjust the right position as needed */
-  text-align: center; /* Center the text */
-}
-/* adjusts the text when reducing browser size */
-@media screen and (max-width: 1000px) {
-  section nav .logo {
-    margin: 100px; /* Remove margin to center the text vertically */
-  }
-}
-
-section nav ul{
-  list-style:none
-}
-
-section nav ul li{
-  display: inline-block;
-  margin: 5px 15px;
-  
-}
-
-section nav ul li a{
-  text-decoration: none;
-  color: black;
-  transition: 0.2s;
-}
-
-section nav ul li a:hover{
-  color: #420101
-}
-
-section nav .icons i{
-  margin: 0 4px;
-  cursor: pointer;
-  font-size: 18px;
-  transition: 0.3s;
-}
-section nav .icons i:hover{
-  color: #870202
-}
-
-section .main .main_content{
-  display:flex;
-  align-items:center;
-  justify-content: space-around;
-  height: 1200px;
-}
-
-.middle_section{
-  height: 600px;
-}
-
-
-/* These next 3 sections adjust the "text sample" header  */
-section .main .main_content .main_text h1{
-  font-size: 60px;
-  line-height: 70px;
-  font-family: pyxidium quick;
-  background: linear-gradient (to right,#420101, #c72092);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  position: relative;
-  top: 45px;
-  left: 5%;
-}
-
-section .main .main_content .main_text h1 span{
-  font-size: 70px;
-  background: linear-gradient (to right,#420101, #c72092);
-    /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-
-}
-
-section .main .main_content .main_text p{
-  width: 300px;
-  text-align: justify;
-  line-height: 21px;
-  position: relative;
-  top: 50px;
-  left: 10px;
-}
-
-/* placement of social icons */
-section .main .social_icon{
-position: absolute; 
-bottom:0%;
-left:50%;
-transform: translate (-50%);
-font-size:19px;
-}
-
-section .main .social_icon i{
-margin: 8px 0;
-cursor: pointer;
-transition: 0.3s;
-}
-
-/*  */
-
-/* colour change when you hover over fb/linkedin */
-section .main .social_icon i:hover{
-  color: #585757
-}
-
-section .main .button{
-  position: absolute;
-  left:6%;
-  Top: 85%;
-  padding: 10px 20px;
-  border-radius: 0px;
-  background-color: #555252;
-  color: rgb(4, 0, 0);
-}
-
-section .main .button a{
-color: white;
-text-decoration: none; 
-}
-
-section .main .button i{
-  color: white;
-  margin-left: 5px;
-  transition: 0.3s;
-}
-
-section .main .button:hover i{
-transform: translateX(6px);
-}
-
-/* footer */
-footer{
-  width: 100%;
-  border: 2px solid #040000;
-  background-color: white; 
-}
-
-footer .footer_main{
-  
-  width: 100%;
-  background: #282A37;
-  display: flex; 
-  justify-content: space-around;
-}
-
-footer .footer_main .tag{
-  margin: 10px 0;
-}
-
-footer .footer_main .tag .center{
-  text-align: center;
-}
-
-footer .footer_main .tag h1{
-  font-size: 25px;
-  margin: 25px 0;
-  color: #ffffff;
-}
-
-
-footer .footer_main .tag a{
-  display: block;
-  color: white;
-  text-decoration: none;
-  margin: 9px 0;
-}
-
-footer .footer_main .tag a i{ 
-  padding: 0 10px; 
-  transition: 0.3;
-}
-
-footer .footer_main .tag a i:hover{
-  color: rgb(52, 45, 45)
-}
-
-/* drop-down menu  */
-
-body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.header {
-  background-color: transparent;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 10%;
-}
-
-
-/* Style the header links */
-.header .link a,
-.header .dropdown .services-btn {
-  color: #fff; /* Set the default color */
-  transition: color 0.3s; /* Add a smooth transition for color changes */
-}
-
-/* Change the color when hovered */
-.header .link:hover a,
-.header .dropdown:hover .services-btn {
-  color: #06bae7; /* Set the desired blue color */
-}
-
-
-.link {
-  background: none;
-  border: none;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
   padding: 0;
-  margin-right: 20px;
-  font-size: 16px
-}
-
-/* Style the "Services" button */
-.services-button {
-  color: rgb(255, 255, 255)
-}
-
-.service-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.service-text {
-  width: 45%;
-}
-
-.service-image {
-  width: 45%;
-  max-height: 200px; /* Adjust as needed */
-}
-
-
-/* Style the "About" links */
-.about-link {
-  color: rgb(255, 255, 255)
-  /* Your styles for the "About" links here */
-}
-
-
-.dropdown.active > .link,
-.link:hover {
-  color: rgb(255, 255, 255);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-menu {
-  position: absolute;
-  left: 0;
-  top: calc(100% + .25rem);
-  background-color: #202c34;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-  display: none;
-  pointer-events: none;
-  transform: translateY(-10px);
-  /* transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
-  z-index: 100;
-}
-
-
-
-.list {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 2rem;
-}
-
-
-.login-form > input {
-  margin-bottom: .5rem;
-}
-
-
-/* Set the "Home" text color to black and remove the underline */
-.link a {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  }
+  
+  html{
+    scroll-behavior:smooth;
+  }
+  
+  section{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* this makes the top box*/
+  section nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-around; 
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: #282A37;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 5vh;
+  }
+  .logo{
+    margin-left: 200%;
+  }
+  
+  section nav .logo {
+    font-size: 12px; /* Adjust the font size as needed */
+    color: #ffffff; /* White color */
+    margin: 5px ;
+    cursor: pointer;
+    position: relative;
+    right: 15%; /* Adjust the right position as needed */
+    text-align: center; /* Center the text */
+  }
+  /* adjusts the text when reducing browser size */
+  @media screen and (max-width: 1000px) {
+    section nav .logo {
+      margin: 100px; /* Remove margin to center the text vertically */
+    }
+  }
+  
+  section nav ul{
+    list-style:none
+  }
+  
+  section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+    
+  }
+  
+  section nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+  }
+  
+  section nav ul li a:hover{
+    color: #420101
+  }
+  
+  section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  section nav .icons i:hover{
+    color: #870202
+  }
+  
+  section .main .main_content{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    height: 1200px;
+  }
+  
+  .middle_section{
+    height: 600px;
+  }
+  
+  
+  /* These next 3 sections adjust the "text sample" header  */
+  section .main .main_content .main_text h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-family: pyxidium quick;
+    background: linear-gradient (to right,#420101, #c72092);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    position: relative;
+    top: 45px;
+    left: 5%;
+  }
+  
+  section .main .main_content .main_text h1 span{
+    font-size: 70px;
+    background: linear-gradient (to right,#420101, #c72092);
+      /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  
+  }
+  
+  section .main .main_content .main_text p{
+    width: 300px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 50px;
+    left: 10px;
+  }
+  
+  /* placement of social icons */
+  section .main .social_icon{
+  position: absolute; 
+  bottom:0%;
+  left:50%;
+  transform: translate (-50%);
+  font-size:19px;
+  }
+  
+  section .main .social_icon i{
+  margin: 8px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  
+  /*  */
+  
+  /* colour change when you hover over fb/linkedin */
+  section .main .social_icon i:hover{
+    color: #585757
+  }
+  
+  section .main .button{
+    position: absolute;
+    left:6%;
+    Top: 85%;
+    padding: 10px 20px;
+    border-radius: 0px;
+    background-color: #555252;
+    color: rgb(4, 0, 0);
+  }
+  
+  section .main .button a{
   color: white;
-  text-decoration: none;
+  text-decoration: none; 
+  }
+  
+  section .main .button i{
+    color: white;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+  
+  section .main .button:hover i{
+  transform: translateX(6px);
+  }
+  
+  /* footer */
+  footer{
+    width: 100%;
+    border: 2px solid #040000;
+    background-color: white; 
+  }
+  
+  footer .footer_main{
+    
+    width: 100%;
+    background: #282A37;
+    display: flex; 
+    justify-content: space-around;
+  }
+  
+  footer .footer_main .tag{
+    margin: 10px 0;
+  }
+  
+  footer .footer_main .tag .center{
+    text-align: center;
+  }
+  
+  footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #ffffff;
+  }
+  
+  
+  footer .footer_main .tag a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 9px 0;
+  }
+  
+  footer .footer_main .tag a i{ 
+    padding: 0 10px; 
+    transition: 0.3;
+  }
+  
+  footer .footer_main .tag a i:hover{
+    color: rgb(52, 45, 45)
+  }
+  
+  /* drop-down menu  */
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+  }
+  
+  
+  /* Style the header links */
+  .header .link a,
+  .header .dropdown .services-btn {
+    color: #fff; /* Set the default color */
+    transition: color 0.3s; /* Add a smooth transition for color changes */
+  }
+  
+  /* Change the color when hovered */
+  .header .link:hover a,
+  .header .dropdown:hover .services-btn {
+    color: #06bae7; /* Set the desired blue color */
+  }
+  
+  
+  .link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 20px;
+    font-size: 16px
+  }
+  
+  /* Style the "Services" button */
+  .services-button {
+    color: rgb(255, 255, 255)
+  }
+  
+  .service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .service-text {
+    width: 45%;
+  }
+  
+  .service-image {
+    width: 45%;
+    max-height: 200px; /* Adjust as needed */
+  }
+  
+  
+  /* Style the "About" links */
+  .about-link {
+    color: rgb(255, 255, 255)
+    /* Your styles for the "About" links here */
+  }
+  
+  
+  .dropdown.active > .link,
+  .link:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100% + .25rem);
+    background-color: #202c34;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    display: none;
+    pointer-events: none;
+    transform: translateY(-10px);
+    /* transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
+    z-index: 100;
+  }
+  
+  
+  
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+  }
+  
+  
+  .login-form > input {
+    margin-bottom: .5rem;
+  }
+  
+  
+  /* Set the "Home" text color to black and remove the underline */
+  .link a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  
+  .background-container {
+    background-image: url('Home-Picture.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Vertically align at the top */
+    align-items: center; /* Horizontally center text */
+  }
+  
+  .background-container h2 {
+    font-family: "Font1", sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #ffffff; 
+    text-align: center; 
+    margin-top: 10%; 
+    margin-right: 30%; /* Move the text 30% to the left */
+  }
+  
+  /* color for the subtext on the main page picture */
+  .background-container p {
+    font-family: sans-serif; 
+    font-size: 16px; 
+    font-weight: normal; 
+    color: #06bae7; 
+    text-align: center; 
+    margin-top: 0%; 
+    margin-right: 25%;
+  } 
+  
+  .banner-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Apply styles as needed */
+  ul {
+    list-style-type: disc; /* You can change to 'circle' or 'square' if desired */
+    margin-top: 10px; /* Adjust margin as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+  li {
+    margin-bottom: 5px; /* Adjust margin as needed */
+  }
+  
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .accounting-text,
+  .taxation-text,
+  .assurance-text,
+  .risk-text {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+    margin: 20px; /* Adjusted for better responsiveness */
+  }
+  
+  .accounting-text h2,
+  .taxation-text h2,
+  .assurance-text h2,
+  .risk-text h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .accounting-text p,
+  .taxation-text p,
+  .assurance-text p,
+  .risk-text p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .service-image,
+  .accounting-image,
+  .taxation-image,
+  .assurance-image,
+  .risk-advisory-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+  #accounting-image {
+    height: 50%;
+    margin-left: 0; /* Adjusted for better responsiveness */
+    margin-top: -15%;
+  }
+  
+  #taxation-image {
+    max-width: 60%;
+  }
+  
+  #assurance-image {
+    height: 50%;
+    margin-left: 0; /* Adjusted for better responsiveness */
+  }
+  
+  #risk-advisory-image {
+    max-width: 100%;
+  }
+  
+  .service-image {
+    text-align: right;
+  }
+  
+  .taxation-text h2,
+  .taxation-text p {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .taxation-image {
+    margin-right: 10%;
+  }
+  
+  .assurance-image {
+    margin-left: 10%;
+  }
+  
+  .risk-image {
+    margin-right: 10%;
+  }
+  
+  .services-banner-container {
+    background-image: url('serv-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Adjusted for better responsiveness */
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+  }
+  
+  #accounting-image {
+    width: 50%;
+    height: 50%;
+    margin-left: 70%; /* Align to the right */
+    margin-right: 0; /* Reset margin-right */
+    margin-top: -15%;
+  }
+  
+  .services-sub-containers {
+    display: flex;
+    width: 100%;
+  }
+  
+  .services-sub-containers div {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+  }
+  
+  .services-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Services Button */
+  .services-btn {
+    background-color: #202c34;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #393D50;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: calc(100% + 10px);
+    border: 1px solid #99a9b5;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #99a9b5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    color: #ffffff; /* Change the text color on hover */
+    background-color: transparent; /* Set the background color to transparent to keep it unchanged */
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .services-btn {background-color: #3e8e41;} */
+  
+  /* Add styles for specific dropdown items */
+
+
+  /* Add this CSS to style the content boxes */
+.services {
+  /* Add styles for the services section if needed */
 }
 
-
-
-.background-container {
-  background-image: url('Home-Picture.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 900px;
+.content-boxes {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Vertically align at the top */
-  align-items: center; /* Horizontally center text */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.background-container h2 {
-  font-family: "Font1", sans-serif; 
-  font-size: 24px; 
-  font-weight: bold; 
-  color: #ffffff; 
-  text-align: center; 
-  margin-top: 10%; 
-  margin-right: 30%; /* Move the text 30% to the left */
-}
-
-/* color for the subtext on the main page picture */
-.background-container p {
-  font-family: sans-serif; 
-  font-size: 16px; 
-  font-weight: normal; 
-  color: #06bae7; 
-  text-align: center; 
-  margin-top: 0%; 
-  margin-right: 25%;
-} 
-
-.banner-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.banner-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Apply styles as needed */
-ul {
-  list-style-type: disc; /* You can change to 'circle' or 'square' if desired */
-  margin-top: 10px; /* Adjust margin as needed */
-  margin-bottom: 20px; /* Adjust margin as needed */
-}
-
-li {
-  margin-bottom: 5px; /* Adjust margin as needed */
-}
-
-.services-container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-}
-
-.accounting-text,
-.taxation-text,
-.assurance-text,
-.risk-text {
-  flex: 1;
-  padding: 20px;
-  background-color: #f9f9f9;
-  text-align: left;
-  margin: 20px; /* Adjusted for better responsiveness */
-}
-
-.accounting-text h2,
-.taxation-text h2,
-.assurance-text h2,
-.risk-text h2 {
-  color: #333;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.accounting-text p,
-.taxation-text p,
-.assurance-text p,
-.risk-text p {
-  color: #666;
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.service-image,
-.accounting-image,
-.taxation-image,
-.assurance-image,
-.risk-advisory-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-}
-
-#accounting-image {
-  height: 50%;
-  margin-left: 0; /* Adjusted for better responsiveness */
-  margin-top: -15%;
-}
-
-#taxation-image {
-  max-width: 60%;
-}
-
-#assurance-image {
-  height: 50%;
-  margin-left: 0; /* Adjusted for better responsiveness */
-}
-
-#risk-advisory-image {
-  max-width: 100%;
-}
-
-.service-image {
-  text-align: right;
-}
-
-.taxation-text h2,
-.taxation-text p {
-  margin-left: 0;
+.content-box {
+  width: 200px; /* Adjust the width as needed */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
   text-align: center;
 }
 
-.taxation-image {
-  margin-right: 10%;
+.box-image img {
+  max-width: 100%;
+  height: auto;
 }
-
-.assurance-image {
-  margin-left: 10%;
-}
-
-.risk-image {
-  margin-right: 10%;
-}
-
-.services-banner-container {
-  background-image: url('serv-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%; /* Adjusted for better responsiveness */
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; 
-}
-
-#accounting-image {
-  width: 50%;
-  height: 50%;
-  margin-left: 70%; /* Align to the right */
-  margin-right: 0; /* Reset margin-right */
-  margin-top: -15%;
-}
-
-.services-sub-containers {
-  display: flex;
-  width: 100%;
-}
-
-.services-sub-containers div {
-  flex: 1 1 50%;
-  box-sizing: border-box;
-}
-
-.services-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-/* Services Button */
-.services-btn {
-  background-color: #202c34;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #393D50;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  top: calc(100% + 10px);
-  border: 1px solid #99a9b5;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: #99a9b5;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  white-space: nowrap;
-  font-size: 12px;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  color: #ffffff; /* Change the text color on hover */
-  background-color: transparent; /* Set the background color to transparent to keep it unchanged */
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .services-btn {background-color: #3e8e41;} */
-
-/* Add styles for specific dropdown items */
-
