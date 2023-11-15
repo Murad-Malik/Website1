@@ -216,12 +216,17 @@ footer .footer_main .tag a i:hover{
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
   background-color: transparent;
   color: #fff;
   padding: 20px;
+  gap: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -277,6 +282,7 @@ body {
 
 .dropdown {
   position: relative;
+  display: inline-block;
 }
 
 .dropdown-menu {
@@ -287,17 +293,14 @@ body {
   padding: .75rem;
   border-radius: .25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-  opacity: 0;
+  display: none;
   pointer-events: none;
   transform: translateY(-10px);
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  /* transition: opacity 150ms ease-in-out, transform 150ms ease-in-out; */
+  z-index: 100;
 }
 
-.dropdown.active > .link + .dropdown-menu{
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
+
 
 .list {
   display: grid;
@@ -305,39 +308,11 @@ body {
   gap: 2rem;
 }
 
-.dropdown-links {
-  display: flex;
-  flex-direction: column;
-  gap: .25rem;
-}
 
 .login-form > input {
   margin-bottom: .5rem;
 }
 
-/* editing the dropdown menu by removing the dot and links */
-.dropdown-menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.dropdown-menu li a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 5px;
-}
-
-.dropdown-menu li a:hover {
-  background-color: rgb(244, 239, 239);
-}
-
-.dropdown-menu list {
-  display:flex;
-  flex-direction:column;
-  gap: .25rem;
-}
 
 /* Set the "Home" text color to black and remove the underline */
 .link a {
@@ -405,12 +380,8 @@ li {
 
 .services-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 4.25%;
-  margin-right: 10%; /* Adjusted for better responsiveness */
-  margin-left: 10%; /* Adjusted for better responsiveness */
+  flex-direction: column;
+  width: 80%;
 }
 
 .accounting-text,
@@ -514,3 +485,69 @@ li {
   margin-right: 0; /* Reset margin-right */
   margin-top: -15%;
 }
+
+.services-sub-containers {
+  display: flex;
+  width: 100%;
+}
+
+.services-sub-containers div {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+}
+
+.services-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Services Button */
+.services-btn {
+  background-color: #202c34;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #202c34;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #2f3a43;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .services-btn {background-color: #3e8e41;}
