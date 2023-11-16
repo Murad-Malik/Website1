@@ -29,17 +29,14 @@
     z-index: 100;
     height: 5vh;
   }
-  .logo{
-    margin-left: 200%;
-  }
-  
+ 
   section nav .logo {
     font-size: 12px; /* Adjust the font size as needed */
     color: #ffffff; /* White color */
     margin: 5px ;
     cursor: pointer;
     position: relative;
-    right: 15%; /* Adjust the right position as needed */
+    right: 13%; /* Adjust the right position as needed */
     text-align: center; /* Center the text */
   }
   /* adjusts the text when reducing browser size */
@@ -346,7 +343,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1100px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Vertically align at the top */
@@ -396,11 +393,6 @@
     margin-bottom: 5px; /* Adjust margin as needed */
   }
   
-  .services-container {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-  }
   
   .accounting-text,
   .taxation-text,
@@ -535,7 +527,7 @@
   
   /* Services Button */
   .services-btn {
-    background-color: #202c34;
+    /* background-color: #202c34; */
     color: white;
     padding: 12px;
     font-size: 16px;
@@ -581,31 +573,39 @@
   
   /* Add styles for specific dropdown items */
 
-
+/* this edits underneath the home page "services" */
 
 .content-boxes {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 20px; 
+  margin-top: 20px;
+  margin-bottom: 1000px;  /* adjusts the size of the container underneath services on home page */
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 
-
 .content-box {
-  width: 200px; /* Adjust the width as needed */
-  margin: 10px;
+  width: 125px; /* Adjust the width as needed */
+  margin: 0px; /* Adjust the margin to reduce or increase the distance */
   padding: 10px;
-  border: 2px solid #D7D7D7; /* Updated border width */
+  border: 2px solid #D7D7D7;
   text-align: center;
   transition: border 0.3s; /* Add a transition for a smooth effect */
+  font-size: 12px;
+  
 }
 
 .content-box:hover {
   border: 2px solid #282A37; /* Highlight the border on hover */
 }
-
-
 
 .box-image img {
   max-width: 100%;
@@ -614,12 +614,20 @@
 
 .services-home h2 {
   width: 60%;
-  margin: 50px auto; /* Adjust margin as needed */
+  margin: 50px auto 2px; /* Adjust margin-bottom as needed */
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
-  margin-bottom: 10px; /* Adjust the margin as needed */
 }
+
+.services-home p {
+  width: 40%;
+  margin: 20px auto 10px; /* Adjust margin-bottom as needed */
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
 
 .box-image a {
   outline: none;
@@ -628,7 +636,7 @@
 .box-image img {
   max-width: 100%; /* Ensures the image is responsive */
   height: auto; /* Maintains the aspect ratio */
-  width: 150px; /* Adjust the width as needed */
+  width: 125px; /* Adjust the width as needed */
   border: none;
   outline: none;
 }
@@ -637,8 +645,10 @@
   /* Add your focus styles, such as a box-shadow or border */
   box-shadow: 0 0 2px 2px #333; /* Dark grey box shadow */
 }
-
 .box-text a {
   text-decoration: none; /* Remove underline */
   color: #000000; /* Set the desired text color */
+}
+.box-text a:hover {
+  color: #5d5d5d; /* Set the text color to blue on hover */
 }
