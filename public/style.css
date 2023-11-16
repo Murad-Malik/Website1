@@ -256,8 +256,8 @@
     font-size: inherit;
     cursor: pointer;
     padding: 0;
-    margin-right: 10px;
-    font-size: 16px;
+    margin-right: 20px;
+    font-size: 16px
   }
   
   /* Style the "Services" button */
@@ -529,11 +529,11 @@
   .services-btn {
     /* background-color: #202c34; */
     color: white;
-    padding: 8px;
+    padding: 12px;
     font-size: 16px;
     border: none;
+    margin-right: 20px;
     text-decoration: none;
-    margin-right: 2px;
   }
   
   
