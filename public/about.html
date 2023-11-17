@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content=""width=device-width, intiial-scale="1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W&A</title>
   <!-- icon for the tab -->
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="website-logo-WAK.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="script.js" defer></script>
-
 </head>
-<body>
 
-    
+<body>
+  <div class="about-banner-container">
+    <h2></h2>
+    <p></p>
+  </div>
+  
   <section>
     <nav>
       <!-- The company name in the top left -->
@@ -45,14 +51,37 @@
             </div>
           </div>
         </div>
-        <!-- Updated the href attribute for the "Contact" button -->
         <button class="link"><a href="contact.html">Contact</a></button>
       </div>
     </nav>
   </section>
 
+  <div id="accounting-section">
+    <div class="services-sub-containers">
+      <div class="text-container">
+        <h2>Our Mission</h2>
+        <p>Learn more about our accounting services...</p>
+      </div>
+      <div class="services-img">
+        <img src="our_mission.jpg" class="services-img" alt="Accounting Services Image">
+      </div>
+    </div>
+  </div>
+    
+  <div class="services-sub-containers">
+    <div class="services-img">
+      <img src="our_firm.png" class = "services-img" alt="Taxation Services Image" >
+    </div>
+    <div class="text-container">
+      <h2>Our Firm</h2>
+      <p>Learn more about our taxation services...</p>
+    </div>
+  </div>
 
   
+    </div>
+  </div>
+
   <footer></footer>
   <script>
     fetch('footer.html')
@@ -61,7 +90,6 @@
         document.querySelector('footer').innerHTML = data;
       });
   </script>
-
-
 </body>
+
 </html>

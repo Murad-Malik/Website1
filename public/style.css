@@ -176,7 +176,6 @@
   }
   
   footer .footer_main{
-    
     width: 100%;
     background: #282A37;
     display: flex; 
@@ -198,13 +197,21 @@
     color: #ffffff;
   }
   
+
   
-  footer .footer_main .tag a{
+  .footer_main .tag a:hover i {
+    color: rgb(52, 45, 45);
+  }
+  
+  .footer_main .tag a{
     display: block;
     color: white;
     text-decoration: none;
-    margin: 9px 0;
+    margin: 5px 0;
+    font-size: 12px;
   }
+
+  
   
   footer .footer_main .tag a i{ 
     padding: 0 10px; 
@@ -509,6 +516,19 @@
     justify-content: flex-start;
     align-items: center; 
   }
+
+  .about-banner-container {
+    background-image: url('about-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; /* Adjusted for better responsiveness */
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+  }
   
   #accounting-image {
     width: 50%;
@@ -717,6 +737,7 @@
   height: 100px; /* Maintain aspect ratio */
   display: block;
   margin-right: 10px;
+  margin-bottom: 100px;
 }
 
 #accounting-section,
@@ -897,7 +918,7 @@ a {
   align-items: flex-end; /* Adjust alignment as needed */
   position: absolute;
   top: 15%;
-  right: 10%;
+  right: 20%;
 }
 
 .contact-info ul {
