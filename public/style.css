@@ -19,7 +19,7 @@
   section nav {
     display:flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     box-shadow: 0 0 8px rgba(0,0,0,0.6);
     background: #282A37;
     position: fixed; 
@@ -28,6 +28,7 @@
     right: 0;
     z-index: 100;
     height: 5vh;
+
   }
  
   section nav .logo {
@@ -36,7 +37,7 @@
     margin: 5px ;
     cursor: pointer;
     position: relative;
-    right: 16%; 
+    right: 12.5%; 
     text-align: center; /* Center the text */
   }
   /* adjusts the text when reducing browser size */
@@ -230,7 +231,7 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-left: 10%;
   }
   
@@ -630,6 +631,7 @@
   margin: 10px 300px 10px;
 }
 
+/* edits the text on the 1st picture on services menu */
 .services-menu-title-img {
   width: 40%;
   margin: 20px auto 10px; /* Adjust margin-bottom as needed */
@@ -669,12 +671,12 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 70%;
-    height: 350px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Vertically align at the top */
     align-items: center; /* Horizontally center text */
-    margin-top: 10%;
+    margin-top: 2.5%;
 }
 .services-menu-title-img h2 {
   color: #F0F8FF;
@@ -704,4 +706,189 @@
 #assurance-section,
 #risk-advisory-section {
     scroll-margin-top: 30px; /* Adjust the value as needed */
+}
+
+.services-menu-text {
+  text-align: center;
+  margin: 20px 25% 20px; /* Adjust the margin as needed */
+  /* Add any additional styles for the services-menu-text class */
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Styles specific to the contact page */
+
+
+.contact-page h2 {
+  color: #333; /* Change the text color as needed */
+}
+
+.contact-page p {
+  color: #555; /* Change the text color as needed */
+}
+
+.contact-page .services-home {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Change the background color as needed */
+}
+
+.contact-page .services-container {
+  background-color: #f0f0f0; /* Change the background color as needed */
+}
+
+.contact-page .content-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-page .content-box {
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff; /* Change the background color as needed */
+}
+
+.contact-page .box-image img {
+  max-width: 100%;
+}
+
+.contact-page .box-text h3 {
+  color: #333; /* Change the text color as needed */
+}
+
+.contact-page footer {
+  background-color: #555; /* Change the background color as needed */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#contact-page body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+#contact-page section {
+  margin: 20px;
+}
+
+#contact-page nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  background: #282A37;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 5vh;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+#contact-page nav .logo {
+  font-size: 12px;
+  color: #ffffff;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  right: 13.7%; /* Adjust this value as needed */
+  text-align: center;
+}
+
+
+#contact-page .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#contact-page form {
+  max-width: 400px;
+  margin: 20px 25%;
+}
+
+#contact-page label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-page input,
+#contact-page textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  
+  box-sizing: border-box;
+}
+
+#contact-page .name-inputs {
+  display: flex;
+  gap: 5px;
+}
+
+#contact-page input[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px; /* Adjust the padding as needed */
+  border: none;
+  cursor: pointer;
+  font-size: 12px; 
+  width: 75px; /* Set width to auto to allow the button to adjust based on content */
+  display: inline-block;
+}
+
+/* hovering submit button changes its colour */
+#contact-page input[type="submit"]:hover {
+  background-color: #555;
+  cursor: pointer; /* Change the cursor to a hand when not disabled and hovered */
+}
+
+
+
+#contact-page p {
+  margin: 0 0px 0 24%;
+  font-size: 14px;
+}
+#contact-page .required {
+  color: rgb(192, 4, 4);
+  margin-left: 2px;
+  vertical-align: text-top;
+  font-size: 12px;
+}
+
+
+
+.name-inputs {
+  display: flex;
+}
+
+.contact-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li i {
+  margin-right: 5px;
 }
