@@ -215,7 +215,9 @@
     color: rgb(52, 45, 45)
   }
   
-.copyright{
+.copyright,
+.copyright-contact
+{
   width: 100%;
   background: #303443;
   display: flex; 
@@ -224,7 +226,11 @@
   color: white;
   padding-top: 5px;
   margin-right: 10px;
+  bottom: 0; /* Align it to the bottom of the container */
   }
+  .copyright-contact{
+  position: absolute; /* Position it absolutely within the container */
+    }
 
   /* drop-down menu  */
   
