@@ -699,3 +699,9 @@
   margin-right: 10px;
 }
 
+#accounting-section,
+#taxation-section,
+#assurance-section,
+#risk-advisory-section {
+    scroll-margin-top: 30px; /* Adjust the value as needed */
+}
