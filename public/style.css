@@ -626,6 +626,10 @@
   font-size: 32px;
 }
 
+.services-home p {
+  margin: 10px 300px 10px;
+}
+
 .services-menu-title-img {
   width: 40%;
   margin: 20px auto 10px; /* Adjust margin-bottom as needed */
