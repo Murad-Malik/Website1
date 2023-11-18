@@ -639,22 +639,35 @@
   width: 125px; /* Adjust the width as needed */
   margin: 0px; /* Adjust the margin to reduce or increase the distance */
   padding: 10px;
-  border: 2px solid #D7D7D7;
+  border: 2px solid #c4c2c2;
   text-align: center;
   transition: border 0.3s; /* Add a transition for a smooth effect */
   font-size: 12px;
+  margin-right: 10px; /* Adjust the value as needed */
+  color: #767676;
+}
+
+.content-box h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 
-
-
 .content-box:hover {
-  border: 2px solid #282A37; /* Highlight the border on hover */
+  border: 2px solid #2e6ca4; /* Highlight the border on hover */
 }
 
 .box-image img {
   max-width: 100%;
   height: auto;
+}
+
+a span {
+  display: inline-block; 
+  margin-top: 10px; 
+  color: #004C6C;
+  fill: #004C6C;
+  font-weight: 600;
 }
 
 .about-us-home h2,
@@ -664,11 +677,14 @@
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
+  color: #555555;
 }
 
 .about-us-home p,
 .services-home p {
-  margin: 10px 300px 10px;
+  margin: 0 0 25px;
+  color: #474747;
+  font-size: 13px;
 }
 
 .about-us-section {
@@ -700,10 +716,6 @@
   font-size: 12px;
 }
 
-.about-us-home{
-
-}
-
 .box-image a {
   outline: none;
 }
@@ -722,11 +734,15 @@
 }
 .box-text a {
   text-decoration: none; /* Remove underline */
-  color: #000000; /* Set the desired text color */
+  color: #210101; /* Set the desired text color */
+  font-family: Montserrat;
+  font-size: 12px;
 }
 .box-text a:hover {
   color: #5d5d5d; /* Set the text color to blue on hover */
 }
+
+
 
 .services-menu-title-img{
   background-image: url('services-menu-title-img.jpg');
@@ -753,7 +769,7 @@
 .services-container {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 5px;
   flex-direction: row;
 }
 
@@ -825,8 +841,9 @@ a {
   max-width: 100%;
 }
 
-.contact-page .box-text h3 {
-  color: #333; /* Change the text color as needed */
+.contact-page,
+.box-text h3 {
+  color: #555555; /* Change the text color as needed */
 }
 
 .contact-page footer {
