@@ -523,7 +523,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%; /* Adjusted for better responsiveness */
-    height: 550px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -623,7 +623,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 20px;
-  margin-bottom: 1000px;  /* adjusts the size of the container underneath services on home page */
+  margin-bottom: 100px;  /* adjusts the size of the container underneath services on home page */
 }
 
 .services-container {
@@ -657,6 +657,7 @@
   height: auto;
 }
 
+.about-us-home h2,
 .services-home h2 {
   width: 60%;
   margin: 50px auto 2px; /* Adjust margin-bottom as needed */
@@ -665,8 +666,29 @@
   font-size: 32px;
 }
 
+.about-us-home p,
 .services-home p {
   margin: 10px 300px 10px;
+}
+
+.about-us-section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.about-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #4285f4; /* You can change this color */
+  color: #ffffff; /* Text color */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 60%;
+}
+
+.about-button:hover {
+  background-color: #3367d6; /* Change this color to the desired hover effect */
 }
 
 /* edits the text on the 1st picture on services menu */
@@ -678,6 +700,9 @@
   font-size: 12px;
 }
 
+.about-us-home{
+
+}
 
 .box-image a {
   outline: none;
