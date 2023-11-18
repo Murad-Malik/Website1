@@ -797,8 +797,12 @@ a span {
   font-weight: normal;
 }
 
+.services-menu-text h2{
+  text-align: center;
+}
+
 .services-menu-text button {
-  background-color: #3498db; /* Change this to your desired background color */
+  background-color: #282A37; /* Change this to your desired background color */
   color: #ffffff; /* Change this to your desired text color */
   padding: 10px 20px;
   border: none;
@@ -809,18 +813,9 @@ a span {
 
 /* Hover effect for the button */
 .services-menu-text button:hover {
-  background-color: #2980b9; /* Change this to your desired hover background color */
+  background-color: #363947; /* Change this to your desired hover background color */
 }
 
-.services-menu-text button {
-  background-color: #3498db; /* Change this to your desired background color */
-  color: #ffffff; /* Change this to your desired text color */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
 
 /* Style for the button container */
 .services-menu-text {
@@ -836,14 +831,9 @@ a span {
     margin-bottom: 25px;
 }
 
-/* Hover effect for the button */
-.services-menu-text button:hover {
-  background-color: #2980b9; /* Change this to your desired hover background color */
-}
-
 /* Style for the line on services menu*/
 .services-menu-text .button-line {
-  border-bottom: 3px solid #3498db; /* Change this to your desired line color */
+  border-bottom: 3px solid #282A37; /* Change this to your desired line color */
   margin-top: 15px; /* Adjust as needed for spacing */
   margin-bottom: 15px;
 }
@@ -1026,4 +1016,3 @@ a {
 .contact-info li i {
   margin-right: 5px;
 }
-
