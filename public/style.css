@@ -1049,7 +1049,7 @@ a {
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Adjust alignment as needed */
+  align-items: flex-end; 
   position: absolute;
   top: 15%;
   right: 20%;
@@ -1075,10 +1075,7 @@ a {
   box-sizing: border-box;
 }  */
 
-/* Add these styles to your existing CSS */
-/* Existing styles... */
 
-/* Update your existing CSS */
 
 
 
@@ -1086,26 +1083,41 @@ a {
   background-color: #f4f4f4;
   padding: 10px;
   text-align: left;
-  width: 100%;
+  width: 60%;
   display: flex; 
   align-items: center;
+}
+
+.contact-background-container,
+.newsletter-background-container{
+  width: 100%;
+  border: 1px red solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .newsletter-container {
   max-width: 100%;
 }
 
-.left-content p {
+.newsletter-left-text{
+  flex: 1.5;
+}
+
+.newsletter-left-text p {
   font-size: 18px;
   color: #333;
   font-weight: bold;
   line-height: 1.5;
-  max-width: 60%;
+  text-align: center;
+  width:90%;
 }
 
 #newsletter-form {
+  flex:2;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 #newsletter-form input {
@@ -1135,39 +1147,46 @@ a {
 /* contact section on home page */
 
 .contact-home-section {
-  background-color: #ffffff; /* Background color */
-  padding: 20px; /* Padding for the section */
-  text-align: center; /* Center-align text */
-  border: 2px solid #000; /* Black border around the contact section */
-  border-radius: 1px; /* Optional: Add border-radius for rounded corners */
-}
-
-.contact-home-text {
-  max-width: 100%; /* Maximum width of the text container */
-  margin-top: 0 auto; /* Center-align the container */
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: left;
+  width: 60%;
+  display: flex; 
+  align-items: center;
 }
 
 .contact-home-text p {
-  font-size: 24px; /* Font size for the paragraph */
-  font-family: sans-serif; /* Use a sans-serif font */
-  font-weight: bold; /* Make the text bold */
-  color: #3a3a3a;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  width:90%;
+  flex: 1;
+}
+
+
+.help-button-container{
+  flex:2;
+  display: flex;
+  justify-content: center;
 }
 
 .help-button {
-  background-color: #037390; 
-  color: #fff; 
-  padding: 5px 5px; 
-  border: none; 
-  cursor: pointer; 
-  text-decoration: none; 
-  display: inline-block; 
+  background-color: #037390;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
   font-size: 14px;
-  margin-left: 25%;
-  width: 100px;
-
+  height: 30px;
+  width: 150px; /* Adjusted width for better responsiveness */
 }
 
 .help-button:hover {
   background-color: #0393b7; 
+}
+
+.contact-home-text{
+  flex: 1.5;
 }
