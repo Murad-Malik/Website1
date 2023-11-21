@@ -638,9 +638,7 @@
 .content-boxes {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  margin-bottom: 100px;  /* adjusts the size of the container underneath services on home page */
+  margin: 20px 0 100px 0;
 }
 
 .services-container {
