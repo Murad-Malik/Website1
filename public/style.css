@@ -151,7 +151,7 @@
     background-color: white;
   }
   
-  .footer_main {
+  .footer-main {
     width: 100%;
     background: #282A37;
     display: flex;
@@ -160,15 +160,15 @@
     border-bottom: 1px solid #fff;
   }
   
-  .footer_main h1 {
+  .footer-main h1 {
     font-size: 20px;
     margin: 20px 200px 0 0;
     color: #ffffff;
   }
   
-  .footer_main .footer-contact a,
-  .footer_main .footer-links a,
-  .footer_main .footer-socials a {
+  .footer-main .footer-contact a,
+  .footer-main .footer-links a,
+  .footer-main .footer-socials a {
     display: block;
     color: white;
     text-decoration: none;
@@ -176,24 +176,24 @@
     margin: 5px 100px 0 0; /* Adjusted the right margin to 100px for both sections */
   }
 
-  .footer_main .footer-contact a i {
+  .footer-main .footer-contact a i {
     margin-right: 10px; /* Adjust the margin as needed */
   }
   
-  .footer_main .footer-links li,
-  .footer_main .footer-contact li {
+  .footer-main .footer-links li,
+  .footer-main .footer-contact li {
     display: block;
     margin: 5px 100px 0 0; /* Adjusted the right margin to 100px for both sections */
   }
 
-  .footer_main .footer-logo img {
+  .footer-main .footer-logo img {
     width: 80px;
     height: 40px;
     margin: 20px 100px 0 0;
   }
   
   @media (max-width: 768px) {
-    .footer_main .footer-logo img {
+    .footer-main .footer-logo img {
       width: 60px; /* Adjust the width for smaller screens */
       height: 40px; /* Adjust the height accordingly */
       margin: 10px 220px 0 0; /* Adjust the margin for spacing */
@@ -201,35 +201,35 @@
   }
 
   @media (max-width: 768px) {
-    .footer_main .footer-socials {
+    .footer-main .footer-socials {
       margin: 10px 10px 0 0; /* Adjust the margin for spacing */
     }
   }
 
   @media (max-width: 768px) {
-    .footer_main .footer-contact {
+    .footer-main .footer-contact {
       margin: 10px 0 0 20px; /* Adjust the margin for spacing */
     }
   }
 
 
   
-  .footer_main .footer-links li {
+  .footer-main .footer-links li {
     display: block;
     margin: 5px 100px 0 0;
   }
   
-  .footer_main .footer-socials a i {
+  .footer-main .footer-socials a i {
     padding: 0 10px;
     transition: 0.3s;
   }
   
-  .footer_main .footer-socials a:hover i {
+  .footer-main .footer-socials a:hover i {
     color: rgb(250, 7, 7);
   }
   
   @media (max-width: 768px) {
-    .footer_main {
+    .footer-main {
       flex-direction: column;
       align-items: center;
     }
@@ -246,10 +246,10 @@
   padding-top: 5px;
   bottom: 0; /* Align it to the bottom of the container */
   }
-  .copyright-contact{
-  position: absolute; /* Position it absolutely within the container */
+  /* .copyright-contact{
+  position: absolute; /* Position it absolutely within the container
   font-size: 10px;
-    }
+    } */
 
 .copyright{
   margin-right: 10px;
@@ -992,6 +992,22 @@ a {
   gap: 5px;
 }
 
+#contact-page {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-page main {
+  flex: 1;
+}
+
+#contact-page footer {
+  margin-top: auto;
+}
+
 /* Submit button on contact page */
 #contact-page input[type="submit"] {
   background-color: #333;
@@ -1012,7 +1028,7 @@ a {
 }
 
 
-#contact-page p {
+#contact-page section p {
   margin: 0 0px 0 25%;
   font-size: 14px;
 }
@@ -1101,7 +1117,7 @@ a {
 
 
 .signup-button {
-  background-color: #3498db;
+  background-color: #037390;
   color: #fff;
   padding: 5px 10px;
   border: none;
@@ -1110,12 +1126,16 @@ a {
   height: 30px;
   width: 150px; /* Adjusted width for better responsiveness */
 }
+.signup-button:hover{
+  background-color: #0393b7; 
+}
+
 
 
 /* contact section on home page */
 
 .contact-home-section {
-  background-color: #f4f4f4; /* Background color */
+  background-color: #ffffff; /* Background color */
   padding: 20px; /* Padding for the section */
   text-align: center; /* Center-align text */
   border: 2px solid #000; /* Black border around the contact section */
@@ -1135,7 +1155,7 @@ a {
 }
 
 .help-button {
-  background-color: #3498db; 
+  background-color: #037390; 
   color: #fff; 
   padding: 5px 5px; 
   border: none; 
@@ -1149,5 +1169,5 @@ a {
 }
 
 .help-button:hover {
-  background-color: #2980b9; 
+  background-color: #0393b7; 
 }
