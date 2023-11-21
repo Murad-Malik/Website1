@@ -1111,7 +1111,7 @@ a {
   font-weight: bold;
   line-height: 1.5;
   text-align: center;
-  width:90%;
+  width:80%;
 }
 
 #newsletter-form {
@@ -1153,6 +1153,7 @@ a {
   width: 60%;
   display: flex; 
   align-items: center;
+  gap:365px;
 }
 
 .contact-home-text p {
@@ -1162,7 +1163,6 @@ a {
   line-height: 1.5;
   text-align: center;
   width:90%;
-  flex: 1;
 }
 
 
