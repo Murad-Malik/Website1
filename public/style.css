@@ -145,58 +145,96 @@
   }
   
   /* footer */
-  footer{
+  footer {
     width: 100%;
     border: 2px solid #040000;
-    background-color: white; 
+    background-color: white;
   }
   
-  footer .footer_main{
+  .footer_main {
     width: 100%;
     background: #282A37;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     border-bottom: 1px solid #fff;
   }
   
-  footer .footer_main .tag{
-    margin: 10px 0;
-  }
-  
-  footer .footer_main .tag .center{
-    text-align: center;
-  }
-  
-  footer .footer_main .tag h1{
+  .footer_main h1 {
     font-size: 20px;
-    margin: 20px 0;
+    margin: 20px 200px 0 0;
     color: #ffffff;
   }
   
-
-  
-  .footer_main .tag a:hover i {
-    color: rgb(52, 45, 45);
-  }
-  
-  .footer_main .tag a{
+  .footer_main .footer-contact a,
+  .footer_main .footer-links a,
+  .footer_main .footer-socials a {
     display: block;
     color: white;
     text-decoration: none;
-    margin: 5px 0;
     font-size: 12px;
+    margin: 5px 100px 0 0; /* Adjusted the right margin to 100px for both sections */
   }
 
-  
-  footer .footer_main .tag a i{ 
-    padding: 0 10px; 
-    transition: 0.3;
+  .footer_main .footer-contact a i {
+    margin-right: 10px; /* Adjust the margin as needed */
   }
   
-  footer .footer_main .tag a i:hover{
-    color: rgb(52, 45, 45)
+  .footer_main .footer-links li,
+  .footer_main .footer-contact li {
+    display: block;
+    margin: 5px 100px 0 0; /* Adjusted the right margin to 100px for both sections */
+  }
+
+  .footer_main .footer-logo img {
+    width: 80px;
+    height: 40px;
+    margin: 20px 100px 0 0;
   }
   
+  @media (max-width: 768px) {
+    .footer_main .footer-logo img {
+      width: 60px; /* Adjust the width for smaller screens */
+      height: 40px; /* Adjust the height accordingly */
+      margin: 10px 220px 0 0; /* Adjust the margin for spacing */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer_main .footer-socials {
+      margin: 10px 10px 0 0; /* Adjust the margin for spacing */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer_main .footer-contact {
+      margin: 10px 0 0 20px; /* Adjust the margin for spacing */
+    }
+  }
+
+
+  
+  .footer_main .footer-links li {
+    display: block;
+    margin: 5px 100px 0 0;
+  }
+  
+  .footer_main .footer-socials a i {
+    padding: 0 10px;
+    transition: 0.3s;
+  }
+  
+  .footer_main .footer-socials a:hover i {
+    color: rgb(250, 7, 7);
+  }
+  
+  @media (max-width: 768px) {
+    .footer_main {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
 .copyright,
 .copyright-contact {
   width: 100%;
@@ -497,7 +535,7 @@
   }
 
   .about-banner-container {
-    background-image: url('about-banner.jpg');
+    background-image: url('about-banner4.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1024,41 +1062,57 @@ a {
 }  */
 
 /* Add these styles to your existing CSS */
+/* Existing styles... */
+
+/* Update your existing CSS */
+
+
+
 .newsletter-section {
   background-color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  display: flex; 
+  align-items: center;
 }
 
 .newsletter-container {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
+}
+
+.left-content p {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.5;
+  max-width: 60%;
 }
 
 #newsletter-form {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-#newsletter-form label {
-  margin-bottom: 10px;
-}
-
 #newsletter-form input {
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+  padding: 5px 7px;
   box-sizing: border-box;
+  margin-right: 10px;
+  width: 200px; /* Adjusted width for better responsiveness */
 }
 
-#newsletter-form button {
+
+.signup-button {
   background-color: #3498db;
   color: #fff;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: none;
   cursor: pointer;
+  font-size: 14px;
+  height: 30px;
+  width: 150px; /* Adjusted width for better responsiveness */
 }
+
 
 /* contact section on home page */
 
@@ -1072,7 +1126,7 @@ a {
 
 .contact-home-text {
   max-width: 100%; /* Maximum width of the text container */
-  margin: 0 auto; /* Center-align the container */
+  margin-top: 0 auto; /* Center-align the container */
 }
 
 .contact-home-text p {
@@ -1091,7 +1145,9 @@ a {
   text-decoration: none; 
   display: inline-block; 
   font-size: 14px;
-  margin-left: 15%;
+  margin-left: 25%;
+  width: 100px;
+
 }
 
 .help-button:hover {
