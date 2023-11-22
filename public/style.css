@@ -920,6 +920,7 @@ a {
   color: #555555; /* Change the text color as needed */
 }
 
+
 .contact-page footer {
   background-color: #555; /* Change the background color as needed */
   color: white;
@@ -1005,9 +1006,27 @@ a {
   flex: 1;
 }
 
-#contact-page footer {
+
+#contact-page footer{
   margin-top: auto;
 }
+
+#accessibility-page footer{
+  margin-top: auto;
+  flex: 1;
+}
+
+.accessibility-footer {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: white;
+  bottom: 0;
+  position: fixed;
+}
+
 
 /* Submit button on contact page */
 #contact-page input[type="submit"] {
@@ -1207,6 +1226,14 @@ a {
   margin-top: 50px;
 }
 
+.accessibility-container{
+  width:30%;
+}
+
+.accessibility-page{
+  background-color: white;
+}
+
 .terms-title{
   font-size: 24px;
   font-weight: bold;
@@ -1222,9 +1249,28 @@ a {
   padding-bottom: 3px;
 }
 
+.accessibility-title{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #555555;
+  padding-bottom: 15px;
+  padding-top: 40px;
+}
+.accessibility-sub-title{
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #555555;
+  padding-bottom: 50px;
+}
+
+
 .terms-troubleshoot-text,
 .terms-paragraph,
-.pp-paragraph{
+.pp-paragraph,
+.accessibility-paragraph{
   font-size: 10px;
   margin-bottom: 10px;
   font-family: 'Montserrat', sans-serif;

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>W&A Professional Corporation</title>
+  <!-- icon for the tab -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="website-logo-WAK.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body class="accessibility-page">
+  <section>
+    <nav>
+      <!-- The company name in the top left -->
+      <div class="logo">
+        <h1>W&A Professional Corporation<span> Professional Corporation</span></h1>
+      </div>
+  
+      <!-- Header section -->
+      <div class="header">
+        <!-- Home button routing "/" means it goes to default/home page -->
+        <button class="link">
+          <a href="/">Home</a>
+        </button>
+        <button class="link"><a href="about.html">About</a></button>
+  
+        <!-- Dropdown menu code for Services -->
+        <div class="dropdown" data-dropdown>
+          <a href="services.html" class="services-btn">Services</a>
+          <div class="dropdown-content">
+            <div>
+              <div class="dropdown-heading services-type"></div>
+              <div class="dropdown-links">
+                <a href="Accounting_Services.html#accounting-section" class="link about-link">Accounting Services</a>
+                <a href="Taxation_Services.html#taxation-section" class="link about-link">Taxation Services</a>
+                <a href="Assurance_Services.html#assurance-section" class="link about-link">Assurance Services</a>
+                <a href="Risk_Advisory.html#risk-advisory-section" class="link about-link">Risk Advisory</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="link"><a href="contact.html">Contact</a></button>
+      </div>
+    </nav>
+  </section>
+  
+  <div class="accessibility-background-container">
+    <div class="accessibility-container">
+      <div class="accessibility-title">Accessibility Statement</div>
+      <div class="accessibility-sub-title">Commitment to Accessible Application Process and Customer Service</div>
+      <p class="accessibility-paragraph">
+        W&A Professional Corporation is committed to accommodating applicants with disabilities, up to the point of undue hardship, during the recruitment, assessment and selection process. Please notify W&A Professional Corporation if you require accommodation in respect of the materials or procedures used at any time during this process. If you require accommodation W&A Professional Corporation will work with you to determine how to meet your needs.
+      </p>
+      <p class="accessibility-paragraph">
+        W&A Professional Corporation is committed to providing customer service in a manner accessible to all of our clients and prospective clients, including those with a disability. To achieve this goal we have implemented policies, procedures and practices to help make the services we offer more accessible.
+      </p>
+      <p class="accessibility-paragraph">
+        If you would like to receive a copy of any of our other policies, procedures and practices related to accessibility or provide us feedback about how we deliver services to clients or prospective clients with disabilities, please contact us, in any of the ways identified below:
+      </p>
+      <p class="accessibility-paragraph">
+        Address
+        <br>
+        Email:
+        <br>
+        Telephone: (416) 391-4499
+      </p>
+      <p class="accessibility-paragraph">
+        If you require the requested information be provided in a particular format for reasons related to a disability please indicate your preferred format at the time of making your request.
+      </p>
+    </div>
+  </div>
+
+  <footer></footer>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        const footerElement = document.querySelector('footer');
+        footerElement.innerHTML = data;
+        footerElement.classList.add('accessibility-footer'); // Add your desired class name here
+      });
+  </script>
+</body>
+</html>
