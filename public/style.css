@@ -866,6 +866,17 @@ a span {
   margin-bottom: 100px;
 }
 
+.services-black-bar {
+  background-color: black;
+  color: white;
+  width: 95.25%;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1.5px;
+}
+
 #accounting-section,
 #taxation-section,
 #assurance-section,
