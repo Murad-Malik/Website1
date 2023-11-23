@@ -1153,7 +1153,6 @@ a {
 
 .newsletter-section {
   max-width: 1200px; 
-  background-color: #f4f4f4;
   padding: 10px;
   text-align: left;
   width: 60%;
@@ -1161,13 +1160,20 @@ a {
   align-items: center;
 }
 
+.email-box{
+margin-top: 10px;
+}
+
 .contact-background-container,
 .newsletter-background-container{
   width: 100%;
-  border: 1px red solid;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contact-background-container{
+  background-color: white;
 }
 
 .newsletter-container {
@@ -1175,22 +1181,28 @@ a {
 }
 
 .newsletter-left-text{
-  flex: 1.5;
-}
-
-.newsletter-left-text p {
+  display: flex;
   font-size: 18px;
   color: #333;
   font-weight: bold;
   line-height: 1.5;
-  text-align: center;
+  margin-left: 5%;
+  overflow-wrap: break-word;
+}
+
+.newsletter-left-text p {
+  display: flex;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.5;
   width:100%;
+  margin-left: 30%;
 }
 
 #newsletter-form {
-  flex:2;
+  flex:1.4;
   display: flex;
-  justify-content: center;
 }
 
 #newsletter-form input {
@@ -1211,6 +1223,8 @@ a {
   height: 30px;
   width: 150px; /* Adjusted width for better responsiveness */
   border-radius: 5px;
+  margin: 0;
+  margin-top: 10px;
 }
 .signup-button:hover{
   background-color: #0393b7; 
@@ -1222,13 +1236,11 @@ a {
 
 .contact-home-section {
   max-width: 1200px;
-  background-color: #f4f4f4;
-  padding: 10px;
+  padding: 5px;
   text-align: left;
   width: 60%;
   display: flex; 
   align-items: center;
-  gap:365px;
   flex-direction: row;
 }
 
@@ -1237,15 +1249,15 @@ a {
   color: #333;
   font-weight: bold;
   line-height: 1.5;
-  text-align: center;
   width:100%;
+  margin-left: 28%;
 }
 
 
 .help-button-container{
-  flex:2;
   display: flex;
   justify-content: center;
+  flex:0.98;
 }
 
 .help-button {
@@ -1259,6 +1271,8 @@ a {
   width: 150px; /* Adjusted width for better responsiveness */
   text-align: center;
   border-radius: 5px;
+  margin-left: 92px;
+  margin-right: 0px
 }
 
 .help-button:hover {
@@ -1373,3 +1387,45 @@ a {
 }
 
 
+
+.newsletter-background-container,
+.newsletter-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#newsletter-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex:2;
+}
+
+#newsletter-form input,
+.signup-button {
+  box-sizing: border-box;
+  margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+.newsletter-background-container{
+  background-image: url('newsletter-background-container.jpg');
+
+}
+
+
+.contact-background-container,
+.contact-home-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.help-button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Add space between text and button */
+}
+
+.help-button {
+  box-sizing: border-box;
+  margin: 10px 0; /* Adjusted margin for better spacing */
+}
