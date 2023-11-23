@@ -1191,12 +1191,19 @@ margin-top: 10px;
 
 .newsletter-left-text p {
   display: flex;
-  font-size: 18px;
-  color: #333;
+  color: white;
   font-weight: bold;
   line-height: 1.5;
   width:60%;
   margin-left: 40%;
+}
+
+.newsletter-left-text{
+  display: flex;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 5%;
+  overflow-wrap: break-word;
 }
 
 #newsletter-form {
