@@ -1591,6 +1591,34 @@ margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 50px
   }
+}
 
 
+.contact-info:hover {
+  cursor: default;
+}
+ /* social-media elements and change color on hover */ 
+.social-media:hover .fa-brands {
+  color: #0393b7; /* Change the color to the desired one */
+}
+
+/* contact info page, remove color when hovering text */
+.social-media:hover a {
+  color: inherit;
+}
+
+
+/* Styles for screens up to 800px width */
+@media only screen and (max-width: 800px) {
+  .services-container {
+    flex-direction: column;
+  }
+
+  .content-boxes-services {
+    margin-bottom: 0; /* Remove margins for each content box */
+  }
+
+  .services-black-bar{
+    width: auto;
+  }
 }
