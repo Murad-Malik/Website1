@@ -623,7 +623,7 @@
     max-width: 800px;
     background-color: #f4f4f4;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
-    margin-top: 15px;
+    margin-top: 25px;
   }
   
   .firm-text-container h2,
@@ -1518,7 +1518,8 @@ margin-top: 10px;
   .services-sub-containers .taxation-text-container,
   .services-sub-containers .assurance-text-container,
   .services-sub-containers .risk-text-container,
-  .services-sub-containers .mission-text-container {
+  .services-sub-containers .mission-text-container 
+  .services-sub-containers .firm-text-container{
     order: 2;
   }
 
@@ -1532,24 +1533,64 @@ margin-top: 10px;
   }
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 1150px) {
   .about-sub-containers {
     flex-direction: column;
+    align-items: center;
   } 
 
-  .about-sub-containers .our-firm-img,
-  .about-sub-containers .our-mission-img {
+  .about-sub-containers .our-mission-img,
+  .about-sub-containers .our-firm-img {
     order: 2;
   }
 
   .about-sub-containers .firm-text-container,
-  .about-sub-containers .mission-text-container{
+  .about-sub-containers .mission-text-container {
     order: 1;
   }
 
-  .about-sub-containers .our-firm-img,
   .about-sub-containers .our-mission-img {
     width: 100%;
     height: 200px; 
   }
+  /* this adds the our firm picture on small window sizes */
+  /* .about-sub-containers .our-firm-img {
+    width: 74%;
+    height: 200px; 
+  } */
+
+  .about-sub-containers .our-firm-img {
+    width: 0;
+    height: 0; 
+  } 
+
+  .about-sub-containers .mission-text-container{
+    font-size: 12px;
+    color: #767676;
+    text-align: center;
+    line-height: 1.4;
+    background-color: white;
+  }
+
+  .about-sub-containers .firm-text-container{
+    background-color: white;
+
+
+  }
+  .about-checklist-container{
+    display: flex;
+    align-items: center;
+    margin-top:5%; 
+    margin-left: 0;
+    gap:0;
+  }
+
+  .about-sub-containers .firm-text-container,
+  .about-sub-containers .mission-text-container{
+    margin-top:0px;
+    padding-top: 10px;
+    padding-bottom: 50px
+  }
+
+
 }
