@@ -1614,11 +1614,14 @@ margin-top: 10px;
     flex-direction: column;
   }
 
-  .content-boxes-services {
-    margin-bottom: 0; /* Remove margins for each content box */
+  .content-box-services img {
+    margin-bottom: 10px; /* Remove margins for each content box */
+  }
+  .content-box-services {
+    margin-left: 10%;
   }
 
   .services-black-bar{
-    width: auto;
+    width: 173.5px;
   }
 }
