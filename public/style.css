@@ -569,7 +569,9 @@
   .taxation-sub-containers,
   .assurance-sub-containers,
   .risk-sub-containers,
-  .services-sub-containers {
+  .services-sub-containers, 
+  .firm-container,
+  .mission-container {
     display: flex;
     width: 100%;
     background-color: #f4f4f4;
@@ -579,7 +581,9 @@
   .taxation-sub-containers div,
   .assurance-sub-containers div,
   .risk-sub-containers div,
-  .services-sub-containers div {
+  .services-sub-containers div, 
+  .firm-container div,
+  .mission-container div {
     flex: 1 1 50%;
     box-sizing: border-box;
   }
@@ -614,14 +618,16 @@
     box-sizing: border-box;
   }
 
-  .about-text-container {
+  .firm-text-container,
+  .mission-text-container{
     max-width: 800px;
     background-color: #f4f4f4;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     margin-top: 15px;
   }
   
-  .about-text-container h2 {
+  .firm-text-container h2,
+  .mission-text-container h2 {
     color: #000000;
     font-size: 28px;
     text-align: center;
@@ -636,7 +642,8 @@
     gap:30px;
   }
   
-  .about-text-container p {
+  .firm-text-container p,
+  .mission-text-container p{
     margin: 0px 75px 0 75px;
     font-size: 12px;
     color: #767676;
@@ -1495,7 +1502,6 @@ margin-top: 10px;
 
 
 
-/* Media query for small screens */
 @media only screen and (max-width: 880px) {
   .services-sub-containers {
     flex-direction: column;
@@ -1504,16 +1510,15 @@ margin-top: 10px;
   .services-sub-containers .services-img,
   .services-sub-containers .taxation-img,
   .services-sub-containers .assurance-img,
-  .services-sub-containers .risk-img,
-  .about-sub-containers .our-firm-img,
-  .about-sub-containers .our-mission-img{
+  .services-sub-containers .risk-img {
     order: 1;
   }
 
   .services-sub-containers .accounting-text-container,
   .services-sub-containers .taxation-text-container,
   .services-sub-containers .assurance-text-container,
-  .services-sub-containers .risk-text-container {
+  .services-sub-containers .risk-text-container,
+  .services-sub-containers .mission-text-container {
     order: 2;
   }
 
@@ -1521,11 +1526,30 @@ margin-top: 10px;
   .services-sub-containers .services-img,
   .services-sub-containers .taxation-img,
   .services-sub-containers .assurance-img,
-  .services-sub-containers .risk-img img, 
-  .about-sub-containers .our-firm-img,
-  .about-sub-containers .our-mission-img
-  {
+  .services-sub-containers .risk-img img {
     width: 100%;
     height: 300px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .about-sub-containers {
+    flex-direction: column;
+  } 
+
+  .about-sub-containers .our-firm-img,
+  .about-sub-containers .our-mission-img {
+    order: 2;
+  }
+
+  .about-sub-containers .firm-text-container,
+  .about-sub-containers .mission-text-container{
+    order: 1;
+  }
+
+  .about-sub-containers .our-firm-img,
+  .about-sub-containers .our-mission-img {
+    width: 100%;
+    height: 200px; 
   }
 }
