@@ -604,6 +604,7 @@
     width: 100%;
     box-sizing: border-box;
   }
+
   
   .accounting-text-container,
   .taxation-text-container,
@@ -624,6 +625,10 @@
     background-color: #f4f4f4;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); */
     margin-top: 25px;
+  }
+
+  .services-menu-text p {
+    text-align: center;
   }
   
   .firm-text-container h2,
@@ -977,6 +982,7 @@ a span {
   border-bottom: 3px solid #282A37; /* Change this to your desired line color */
   margin-top: 15px; /* Adjust as needed for spacing */
   margin-bottom: 15px;
+  width: 725px;
 }
 
 
@@ -1507,7 +1513,7 @@ margin-top: 10px;
     flex-direction: column;
   }
 
-  .services-sub-containers .services-img,
+  .services-sub-containers .accounting-img,
   .services-sub-containers .taxation-img,
   .services-sub-containers .assurance-img,
   .services-sub-containers .risk-img {
@@ -1518,13 +1524,13 @@ margin-top: 10px;
   .services-sub-containers .taxation-text-container,
   .services-sub-containers .assurance-text-container,
   .services-sub-containers .risk-text-container,
-  .services-sub-containers .mission-text-container 
+  .services-sub-containers .mission-text-container, 
   .services-sub-containers .firm-text-container{
     order: 2;
   }
 
   /* Adjust image size for smaller screens */
-  .services-sub-containers .services-img,
+  .services-sub-containers .accounting-img,
   .services-sub-containers .taxation-img,
   .services-sub-containers .assurance-img,
   .services-sub-containers .risk-img img {
@@ -1612,6 +1618,10 @@ margin-top: 10px;
 @media only screen and (max-width: 800px) {
   .services-container {
     flex-direction: column;
+    margin-right: 75px;
+  }
+  .services-menu-text .button-line {
+    width: 350px;
   }
 
   .content-box-services img {
@@ -1623,5 +1633,11 @@ margin-top: 10px;
 
   .services-black-bar{
     width: 173.5px;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  section nav{
+    height: 10vh;
   }
 }
